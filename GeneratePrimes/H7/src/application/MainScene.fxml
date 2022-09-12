@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MController">
+   <children>
+      <Label fx:id="myLabel" layoutX="15.0" layoutY="246.0" prefHeight="32.0" prefWidth="231.0" text="Enter N :">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <TextField fx:id="Nnumber" layoutX="14.0" layoutY="288.0" prefHeight="48.0" prefWidth="188.0" />
+      <Button fx:id="myButton" layoutX="14.0" layoutY="350.0" mnemonicParsing="false" onAction="#enterClick" prefHeight="34.0" prefWidth="116.0" text="Enter" textFill="#566f14">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Button fx:id="myReset" layoutX="108.0" layoutY="435.0" mnemonicParsing="false" onAction="#resetClick" prefHeight="48.0" prefWidth="97.0" text="RESET" textFill="#a91f1f">
+         <font>
+            <Font name="Arial" size="16.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="15.0" layoutY="28.0" prefHeight="172.0" prefWidth="200.0" text="A Hexagon Cross twin prime&#10;is a twin prime that consists &#10;of 2 twin primes where one is &#10;double the value of the original&#10;prime. &#10;&#10;In the text field below enter&#10;the number (N) of primes&#10;you wish to see." />
+      <ListView fx:id="myListView" layoutX="308.0" layoutY="28.0" prefHeight="348.0" prefWidth="200.0" />
+      <TextArea layoutX="328.0" layoutY="423.0" prefHeight="60.0" prefWidth="116.0" text="***Takes a while &#10;to generate bigger&#10;values of N." />
+      <TextArea layoutX="14.0" layoutY="208.0" prefHeight="38.0" prefWidth="188.0" text="N should be a positive number " />
+      <TextArea layoutX="138.0" layoutY="399.0" prefHeight="0.0" prefWidth="154.0" text="Click Reset to clear List" />
+   </children>
+</AnchorPane>
